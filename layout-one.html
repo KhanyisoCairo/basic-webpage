@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        /* you can use a more complete font-family from VSCode as well */
+        font-family: arial;
+    }
+
+    .header {
+        background-image: url(/home/codex/projects/table.gif);
+        background-color: lightgreen;
+        padding: 5em;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+
+
+    }
+
+    .main {
+        background-color: rgb(75, 185, 180);
+    }
+
+    .footer {
+
+        background-color: blueviolet;
+        padding: 1em;
+    }
+
+    .facts {
+        width: 5em;
+    }
+
+
+    @media(min-width:800px) {
+        .side-bar {
+            background-color: coral;
+            float: left;
+            width: 20%;
+            padding: 1em;
+        }
+    }
+
+    .clearfix {
+        overflow: auto;
+        zoom: 1;
+    }
+
+    .content {
+
+        padding: 1em;
+    }
+
+    .menu li {
+        list-style: none;
+        margin: 1%;
+        padding: 1%;
+    }
+
+    menu a {
+        /* Ensure one can click anyware in the li for the link */
+        padding: 1em;
+        display: block;
+        width: 6em;
+    }
+
+    .menu a:hover {
+        /* Change the menu color to darker green when hovering over a link*/
+        background-color: lightseagreen;
+    }
+
+    @media(min-width:800px) {
+        /* Other css is here still */
+
+        .menu {
+            display: flex;
+            padding-bottom: 1em;
+            color:white;
+            
+
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .picture {
+        width: 20%;
+    }
+
+    .whichCity {
+        float: left;
+        margin: 0 0 1em 1em;
+        width: 30%;
+    }
+
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    table,
+    th,
+    td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: left;
+
+
+
+    }
+
+    th {
+        text-align: left;
+    }
+
+    td {
+        letter-spacing: 0em;
+    }
+
+    /*.castel {
+        float: left;
+        margin: 0 0 1em 1em;
+        width: 200px;
+       
+    }
+
+    .parliament {
+        float: left;
+        margin: 0 0 1em 1em;
+        width: 200px;
+       
+    }
+
+    .DistrictSix {
+        float: left;
+        margin: 0 0 1em 1em;
+        width: 200px;
+      
+    }*/
+
+   /* .places {
+        float: left;
+        display: flex;
+    }*/
+
+    /*.place {
+        float: left;
+        display: block;
+        border: 1px #ccc saddlebrown;
+        padding: 10px;
+        width: 30%;
+    }*/
+
+    .place ul {
+        float: left;
+        display: block;
+    }
+
+    .place img {
+        float: right;
+        margin: 30px
+    }
+
+    .imgFix {
+        
+        float: left;
+        width: 200px;
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Khanyiso Yezo </h1>
+
+            <img src="/home/codex/projects/khanyiso.jpeg" class="picture">
+            <ul class="menu">
+                <li><a href="#" style="color:whitesmoke">which City</a></li>
+                <li><a href="#" style="color:whitesmoke">Info</a></li>
+                <li><a href="#" style="color:whitesmoke">About</a></li>
+            </ul>
+
+        </div>
+        <div class="main clearfix">
+            <div class="content">
+                <div>
+                    <h2>Which city:</h2>
+                    <h3>Durban</h3>
+                    <img src="/home/codex/projects/whichCity.jpeg" class="whichCity">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Pellentesque nec nam aliquam sem et tortor consequat id.
+                        Elit scelerisque mauris pellentesque pulvinar pellentesque habitant.
+                        Aliquam ut porttitor leo a. Quis eleifend quam adipiscing vitae proin.
+                        Ut faucibus pulvinar elementum integer enim neque volutpat.
+                        Pellentesque diam volutpat commodo sed egestas egestas.
+                        Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.
+                        Augue mauris augue neque gravida in fermentum et sollicitudin ac.
+                        Metus aliquam eleifend mi in.
+                        Tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium.
+                        Lobortis mattis aliquam faucibus purus in massa.
+                        Morbi tristique senectus et netus et. Sed id semper risus in.
+                        Ut sem nulla pharetra diam sit.
+                        Nibh venenatis cras sed felis eget velit aliquet.</p>
+                </div>
+            </div>
+        </div>
+        
+            <div style="padding-bottom:16px;">
+
+                <h5 style="margin:10px;font-size: 25px; padding-bottom: 16px">A foreign language:</h5>
+                <div >
+                    <table style="width:50%h">
+                        <tr>
+                            <th>Spanish</th>
+                            <th>English</th>
+                        </tr>
+                        <tr>
+                            <td>amo a africa</td>
+                            <td>I love Africa</td>
+                        </tr>
+                        <tr>
+                            <td>Buenos días</td>
+                            <td>Good Morning</td>
+                        </tr>
+                        <tr>
+                            <td>Que tal tu día</td>
+                            <td>How was your day</td>
+                        </tr>
+                        <tr>
+                            <td>hermoso</td>
+                            <td>Beautiful</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        
+      
+            
+                    
+                        
+                    <div style="width: 90%; margin: auto" class="flex">
+                        <div style="display: flex;">
+                             
+                            
+                            <div style="flex:1;padding: 1em">
+                                <img class="imgFix" src="/home/codex/projects/sa-parliament.jpg" >
+                                     ipsum dolor sit amet, consectetur adipiscing elit
+                                    Morbi tristique senectus et netus et. Sed id semper risus in.
+                                    Nibh venenatis cras sed felis eget velit aliquet  .    
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    Morbi tristique senectus et netus et. Sed id semper risus in.
+                                    Nibh venenatis cras sed felis eget velit aliquet  
+                            </div>
+                        
+                           
+                        </div>
+                        <div style="display: flex;">              
+                                <div style="flex:1;padding: 1em">
+                                    <img class="imgFix" src="/home/codex/projects/sa-parliament.jpg" >
+                                         ipsum dolor sit amet, consectetur adipiscing elit
+                                        Morbi tristique senectus et netus et. Sed id semper risus in.
+                                        Nibh venenatis cras sed felis eget velit aliquet  .    
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                        Morbi tristique senectus et netus et. Sed id semper risus in.
+                                        Nibh venenatis cras sed felis eget velit aliquet                                        
+                                </div>   
+                            </div>
+                            <div style="display: flex;">
+                                    <div style="flex:1;padding: 1em">
+                                         <img class="imgFix" src="/home/codex/projects/sa-parliament.jpg" >
+                                             ipsum dolor sit amet, consectetur adipiscing elit
+                                            Morbi tristique senectus et netus et. Sed id semper risus in.
+                                            Nibh venenatis cras sed felis eget velit aliquet  .    
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            Morbi tristique senectus et netus et. Sed id semper risus in.
+                                            Nibh venenatis cras sed felis eget velit aliquet        
+                                    </div>
+                                
+                                   
+                                </div>
+                        
+                    </div>
+                   
+        </div>
+
+        <div class="footer">
+            <h4>@Khanyiso Yezo</h4>
+        </div>
+    </div>
+</body>
+
+</html>
