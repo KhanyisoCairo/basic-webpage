@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        /* you can use a more complete font-family from VSCode as well */
+        font-family: arial;
+    }
+
+    .header {
+        background-image: url('../../basic_website/table.gif');
+        background-color: lightgreen;
+        padding: 5em;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+
+
+    }
+
+    .main {
+        background-color: rgb(235, 241, 241);
+    }
+
+    .footer {
+
+        background-color:whitesmoke;
+        padding: 1em;
+    }
+
+    .facts {
+        width: 5em;
+    }
+
+
+    @media(min-width:800px) {
+        .side-bar {
+            background-color: coral;
+            float: left;
+            width: 20%;
+            padding: 1em;
+        }
+    }
+
+    .clearfix {
+        overflow: auto;
+        zoom: 1;
+    }
+
+    .content {
+
+        padding: 1em;
+    }
+
+    .menu li {
+        list-style: none;
+        margin: 1%;
+        padding: 1%;
+    }
+
+    menu a {
+        /* Ensure one can click anyware in the li for the link */
+        padding: 1em;
+        display: block;
+        width: 6em;
+    }
+
+    .menu a:hover {
+        /* Change the menu color to darker green when hovering over a link*/
+        background-color: lightseagreen;
+    }
+
+    @media(min-width:800px) {
+        /* Other css is here still */
+
+        .menu {
+            display: flex;
+            padding-bottom: 1em;
+            color:white;
+            
+
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .picture {
+        width: 20%;
+    }
+
+    .whichCity {
+        float: left;
+        margin: 0 0 1em 1em;
+        width: 28%;
+    }
+
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    table,
+    th,
+    td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        text-align: left;
+
+
+
+    }
+
+    th {
+        text-align: left;
+    }
+
+    td {
+        letter-spacing: 0em;
+    }
+
+    /*.castel {
+        float: left;
+        margin: 0 0 1em 1em;
+        width: 200px;
+       
+    }
+
+    .parliament {
+        float: left;
+        margin: 0 0 1em 1em;
+        width: 200px;
+       
+    }
+
+    .DistrictSix {
+        float: left;
+        margin: 0 0 1em 1em;
+        width: 200px;
+      
+    }*/
+
+   /* .places {
+        float: left;
+        display: flex;
+    }*/
+
+    /*.place {
+        float: left;
+        display: block;
+        border: 1px #ccc saddlebrown;
+        padding: 10px;
+        width: 30%;
+    }*/
+
+    .place ul {
+        float: left;
+        display: block;
+    }
+
+    .place img {
+        float: right;
+        margin: 30px
+    }
+
+    .imgFix {
+        
+        float: left;
+        width: 200px;
+    }
+
+</style>
+
+<head>
+    <link rel="stylesheet" href="simple-grid/grid/simple-grid.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Khanyiso Yezo </h1>
+
+            <img src="../../basic_website/khanyiso.jpeg" class="picture">
+            <ul class="menu">
+                <li><a href="#which City" style="color:whitesmoke">which City</a></li>
+                <li><a href="#A foreign language" style="color:whitesmoke">A foreign language</a></li>
+                <li><a href="#Historic Places in Cape Town" style="color:whitesmoke">Historic Places in Cape Town</a></li>
+            </ul>
+
+        </div>
+        <div class="main clearfix">
+            <div class="content">
+                <div>
+                    <h2 id="which City ">Which city:</h2>
+                    <h3>Durban</h3>
+                    <img src="../../basic_website/whichCity.jpeg" class="whichCity">
+                    <p> The British colonized the Durban area in 1824. 
+                        The settlement was originally called Port Natal.
+                         In 1835 the city was renamed to Durban city 
+                        (named after the somewhat controversial Cape Colony governor Sir Benjamin D’Urban)
+                        Durban, otherwise known as eThekwini, is recognised as the largest city in KwaZulu-Natal 
+                        and is famous for being the busiest port in South Africa. We all know Durban for the warm,
+                         subtropical weather and vast, amazing beaches, which makes it a tropical paradise for lazy, 
+                         relaxing days in the sun and exciting nights filled with bright lights, music and busy streets 
+                         filled with people and an energy
+                         that is exciting yet can’t quite be defined..</p>
+                </div>
+            </div>
+        </div>
+        
+            <div  style="padding-bottom:16px;">
+
+                <h5 id="A foreign language" style="margin:10px;font-size: 25px; padding-bottom: 16px">A foreign language:</h5>
+                <div >
+                    <table style="width:50%h">
+                        <tr>
+                            <th>Spanish</th>
+                            <th>English</th>
+                        </tr>
+                        <tr>
+                            <td>amo a africa</td>
+                            <td>I love Africa</td>
+                        </tr>
+                        <tr>
+                            <td>Buenos días</td>
+                            <td>Good Morning</td>
+                        </tr>
+                        <tr>
+                            <td>Que tal tu día</td>
+                            <td>How was your day</td>
+                        </tr>
+                        <tr>
+                            <td>hermoso</td>
+                            <td>Beautiful</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        
+      
+            
+                    
+                          <div>
+                             <h2 id="Historic Places in Cape Town" style="padding:16px">Historic Places in Cape Town </h2>
+                        </div>
+
+                    <div style="width: 90%; margin: auto" class="flex">
+                      
+                        <div style="display: flex;">   
+                                                  
+                            <div style="flex:1;padding: 1em">
+                                <h2 style="padding-bottom: 16px;">Parliament</h2>
+                                <img class="imgFix" src="../../basic_website/sa-parliament.jpg" >
+                                The predecessor of the Parliament of South Africa, before the 1910 Union of South Africa,
+                                was the bicameral Parliament of the Cape of Good Hope. This was composed of the House of Assembly 
+                                (the lower house) and the Legislative Council (the upper house).
+                                It dated back to the beginnings of Cape independence in 1853, and was elected according to the multi-racial Cape Qualified Franchise system, 
+                                whereby suffrage qualifications were applied equally to all males, regardless of race.
+                                The buildings of the Cape Parliament went on to house the Parliament of South Africa, 
+                                after union
+                            </div>
+                        
+                           
+                        </div>
+                        <div style="display: flex;">              
+                                <div style="flex:1;padding: 1em">
+                                    <h2 style="padding-bottom: 16px;">DistrictSix</h2>
+                                    <img class="imgFix" src="../../basic_website/distict6.jpeg" >
+                                     District Six Museum is a museum in the former inner-city residential area,
+                                     District Six, in Cape Town, South Africa.
+                                     District Six Foundation was founded in 1989 and the museum in 1994,
+                                     as a memorial to the forced movement of 60,000 inhabitants of various races
+                                     in District Six during Apartheid in South Africa in the 1970s.
+                                     The floor of the museum is covered with a big map of the district
+                                     with hand written notes of former inhabitants, which indicate where their houses were located. One former resident is jazz musician,
+                                     Abdullah Ibrahim, better known by the name Dollar Brand. Other pieces in the museum are old traffic signs,
+                                     exhibits of historical moments and lives of families from the area, historical declarations, 
+                                     and exhibits about the demolition                                        
+                                </div>   
+                            </div>
+                            <div style="display: flex;">
+                                    <div style="flex:1;padding: 1em">
+                                        <h2 style="padding-bottom: 16px;">CastleOfGoodHope</h2>
+                                         <img class="imgFix" src="../../basic_website/castleOfGoodHope.jpg" >
+                                        The Castle of Good Hope (Dutch: Kasteel de Goede Hoop; Afrikaans: Kasteel die Goeie Hoop) 
+                                        known locally as the Castle or Cape Town Castle  is a bastion fort built in the 17th century
+                                        in Cape Town, South Africa. Originally located on the coastline of Table Bay, following land reclamation the fort is now located inland.
+                                        In 1936 the Castle was declared a historical monument (now a provincial heritage site) and following restorations
+                                        in the 1980s it is considered the best preserved example of a Dutch East India Company fort.        
+                                    </div>
+                                
+                                   
+                                </div>
+                        
+                    </div>
+                   
+        </div>
+
+        <div class="footer">
+            <h4>@Khanyiso Yezo</h4>
+        </div>
+    </div>
+</body>
+
+</html>
