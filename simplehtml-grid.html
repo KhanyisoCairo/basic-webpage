@@ -69,6 +69,16 @@
         background-color: lightseagreen;
     }
 
+
+    .placesImg{
+        width: 50%;
+    float: right;
+    }
+
+    .floatRight{
+        float: left;
+    }
+
     @media(min-width:800px) {
         /* Other css is here still */
 
@@ -84,6 +94,11 @@
             display: flex;
             flex-direction: row;
         }
+
+        .floatRight{
+        float: right;
+    }
+
     }
 
     .picture {
@@ -168,6 +183,7 @@
         
         float: left;
         width: 200px;
+        padding: 1em;
     }
 
 </style>
@@ -176,7 +192,7 @@
     <link rel="stylesheet" href="simple-grid/grid/simple-grid.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="simple-grid.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
@@ -199,7 +215,7 @@
                 <div>
                     <h2 id="which City ">Which city:</h2>
                     <h3>Durban</h3>
-                    <img src="whichCity.jpeg" class="whichCity">
+                    <img src="Durban-resizeimage (2).jpg" class="whichCity" style="padding:1em;">
                     <p> The British colonized the Durban area in 1824. 
                         The settlement was originally called Port Natal.
                          In 1835 the city was renamed to Durban city 
@@ -214,11 +230,11 @@
             </div>
         </div>
         
-            <div  style="padding-bottom:16px;">
+            <div >
 
-                <h5 id="A foreign language" style="margin:10px;font-size: 25px; padding-bottom: 16px">A foreign language:</h5>
-                <div >
-                    <table style="width:50%h">
+                <h5>A foreign language:</h5>
+                <div>
+                    <table  class="row::after">
                         <tr>
                             <th>Spanish</th>
                             <th>English</th>
@@ -246,32 +262,78 @@
       
             
                     
-                          <div>
-                             <h2 id="Historic Places in Cape Town" style="padding:16px">Historic Places in Cape Town </h2>
+                           <div>
+                             <h2 >Historic Places in Cape Town </h2>
+                        </div> 
+                        <div class="row clearfix">
+                            <div class="col-12">
+                                <div class="row flex">
+                                    <div class="col-12">
+                                        <img class="placesImg " src="Parliament-resizeimage.jpg"  >
+                                        <p> predecessor of the Parliament of South Africa, before the 1910 Union of South Africa,
+                                        was the bicameral Parliament of the Cape of Good Hope. This was composed of the House of Assembly 
+                                        (the lower house) and the Legislative Council (the upper house).
+                                        It dated back to the beginnings of Cape independence in 1853, and was elected according to the multi-racial Cape Qualified Franchise system, 
+                                        whereby suffrage qualifications were applied equally to all males, regardless of race.
+                                        The buildings of the Cape Parliament went on to house the Parliament of South Africa, 
+                                        after union
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+                                            <img class="placesImg floatRight" src="CastleOfGoodHope-resizeimage (1).jpg"  >
+                                            <p> The Castle of Good Hope (Dutch: Kasteel de Goede Hoop; Afrikaans: Kasteel die Goeie Hoop) 
+                                                    known locally as the Castle or Cape Town Castle  is a bastion fort built in the 17th century
+                                                    in Cape Town, South Africa. Originally located on the coastline of Table Bay, following land reclamation the fort is now located inland.
+                                                    In 1936 the Castle was declared a historical monument (now a provincial heritage site) and following restorations
+                                                    in the 1980s it is considered the best preserved example of a Dutch East India Company fort.
+                                            </p>
+                                        </div>
+                                        <div class="col-12">
+                                                <img class="placesImg" src="District6resizeimage (4).jpg"  >
+                                                <p>    District Six Museum is a museum in the former inner-city residential area,
+                                                        District Six, in Cape Town, South Africa.
+                                                        District Six Foundation was founded in 1989 and the museum in 1994,
+                                                        as a memorial to the forced movement of 60,000 inhabitants of various races
+                                                        in District Six during Apartheid in South Africa in the 1970s.
+                                                        The floor of the museum is covered with a big map of the district
+                                                        with hand written notes of former inhabitants, which indicate where their houses were located. One former resident is jazz musician,
+                                                        Abdullah Ibrahim, better known by the name Dollar Brand. Other pieces in the museum are old traffic signs,
+                                                        exhibits of historical moments and lives of families from the area, historical declarations, 
+                                                        and exhibits about the demolition 
+                                                </p>
+                                            </div>
+                                </div>
+                            </div>
+
                         </div>
 
-                    <div style="width: 90%; margin: auto" class="flex">
+                        
+
+                    <div  class=" main clearfix">
                       
-                        <div style="display: flex;">   
+                        <!-- <div  >   
                                                   
-                            <div style="flex:1;padding: 1em">
-                                <h2 style="padding-bottom: 16px;">Parliament</h2>
-                                <img class="imgFix" src="sa-parliament.jpg" >
+                            <div class="row display:flex">
+                                <h2 >Parliament</h2>
+                                
+                                <p class="col-4  left">
+                                    <img class="left" src="Parliament-resizeimage.jpg"  >
                                 The predecessor of the Parliament of South Africa, before the 1910 Union of South Africa,
                                 was the bicameral Parliament of the Cape of Good Hope. This was composed of the House of Assembly 
                                 (the lower house) and the Legislative Council (the upper house).
                                 It dated back to the beginnings of Cape independence in 1853, and was elected according to the multi-racial Cape Qualified Franchise system, 
                                 whereby suffrage qualifications were applied equally to all males, regardless of race.
                                 The buildings of the Cape Parliament went on to house the Parliament of South Africa, 
-                                after union
+                                after union</p>
                             </div>
                         
                            
-                        </div>
-                        <div style="display: flex;">              
-                                <div style="flex:1;padding: 1em">
-                                    <h2 style="padding-bottom: 16px;">DistrictSix</h2>
-                                    <img class="imgFix" src="distict6.jpeg" >
+                        </div> -->
+                        <!-- <div class="row display: flex ">              
+                                <div >
+                                    <h2>DistrictSix</h2>
+                                    <p  class="col-4  center">
+                                    <img class="center" src="District6resizeimage (4).jpg" >
                                      District Six Museum is a museum in the former inner-city residential area,
                                      District Six, in Cape Town, South Africa.
                                      District Six Foundation was founded in 1989 and the museum in 1994,
@@ -281,22 +343,25 @@
                                      with hand written notes of former inhabitants, which indicate where their houses were located. One former resident is jazz musician,
                                      Abdullah Ibrahim, better known by the name Dollar Brand. Other pieces in the museum are old traffic signs,
                                      exhibits of historical moments and lives of families from the area, historical declarations, 
-                                     and exhibits about the demolition                                        
+                                     and exhibits about the demolition 
+                                     </p>                                      
                                 </div>   
-                            </div>
-                            <div style="display: flex;">
-                                    <div style="flex:1;padding: 1em">
-                                        <h2 style="padding-bottom: 16px;">CastleOfGoodHope</h2>
-                                         <img class="imgFix" src="castleOfGoodHope.jpg" >
+                            </div> -->
+                            <!-- <div >
+                                    <div class="row display : flex">
+                                        <h2 class="right">CastleOfGoodHope</h2>
+                                        <p class=" right" >
+                                         <img class="right" src="CastleOfGoodHope-resizeimage (1).jpg" >
                                         The Castle of Good Hope (Dutch: Kasteel de Goede Hoop; Afrikaans: Kasteel die Goeie Hoop) 
                                         known locally as the Castle or Cape Town Castle  is a bastion fort built in the 17th century
                                         in Cape Town, South Africa. Originally located on the coastline of Table Bay, following land reclamation the fort is now located inland.
                                         In 1936 the Castle was declared a historical monument (now a provincial heritage site) and following restorations
-                                        in the 1980s it is considered the best preserved example of a Dutch East India Company fort.        
+                                        in the 1980s it is considered the best preserved example of a Dutch East India Company fort.
+                                    </p>        
                                     </div>
                                 
                                    
-                                </div>
+                                </div> -->
                         
                     </div>
                    
